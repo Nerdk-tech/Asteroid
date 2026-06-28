@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+    --font-space: 'Space Grotesk', sans-serif;
+    --font-caveat: 'Caveat', cursive;
+
+    --background: 240 20% 2%;
+    --foreground: 0 0% 95%;
+    --card: 240 15% 6%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 15% 6%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 28 100% 55%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 0 0% 85%;
+    --muted: 240 10% 10%;
+    --muted-foreground: 240 5% 50%;
+    --accent: 28 90% 48%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 14%;
+    --input: 240 10% 14%;
+    --ring: 28 100% 55%;
+    --chart-1: 28 100% 55%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+    --sidebar-background: 240 15% 4%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 28 100% 55%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 240 10% 10%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 10% 14%;
+    --sidebar-ring: 28 100% 55%;
+  }
+
+  .dark {
+    --background: 240 20% 2%;
+    --foreground: 0 0% 95%;
+    --card: 240 15% 6%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 15% 6%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 28 100% 55%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 0 0% 85%;
+    --muted: 240 10% 10%;
+    --muted-foreground: 240 5% 50%;
+    --accent: 28 90% 48%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 14%;
+    --input: 240 10% 14%;
+    --ring: 28 100% 55%;
+    --chart-1: 28 100% 55%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 15% 4%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 28 100% 55%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 240 10% 10%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 10% 14%;
+    --sidebar-ring: 28 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(240 20% 2%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(240 10% 20%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(28 100% 55%);
+}
